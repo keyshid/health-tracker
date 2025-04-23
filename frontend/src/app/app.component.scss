@@ -1,0 +1,102 @@
+$primary-color: #1976d2;
+$secondary-color: #fff;
+$danger-color: #e53935;
+$success-color: #43a047;
+
+.container {
+    width: 800px;
+    margin: 2rem auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    color: $primary-color;
+    margin-bottom: 1rem;
+}
+
+.entry-form {
+    background: lighten($primary-color, 45%);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+
+    .form-group {
+        margin-bottom: 0.75rem;
+
+        label {
+            font-weight: 600;
+            display: inline-block;
+            width: 150px;
+        }
+
+        input {
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: calc(100% - 160px);
+        }
+    }
+
+    button {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+
+        &:disabled {
+            background-color: #aaa;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.entries-list {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+
+        .low-temp {
+            color: #2196f3;
+            font-weight: bold;
+        }
+
+        .normal-temp {
+            color: #43a047;
+            font-weight: bold;
+        }
+
+        .fever-temp {
+            color: #fb8c00;
+            font-weight: bold;
+        }
+
+        .high-fever-temp {
+            color: #e53935;
+            font-weight: bold;
+        }
+
+    }
+}
